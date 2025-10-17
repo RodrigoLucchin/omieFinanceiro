@@ -1,0 +1,414 @@
+{
+  "name": "Documentação",
+  "nodes": [
+    {
+      "parameters": {
+        "jsCode": "const filiais = [\n  { nome: 'SP', app_key: '', app_secret: '' },\n  { nome: 'RS', app_key: '', app_secret: '' },\n  { nome: 'RJ', app_key: '', app_secret: '' },\n  { nome: 'MG', app_key: '', app_secret: '' },\n  { nome: 'ES', app_key: '', app_secret: '' },\n  { nome: 'SC', app_key: '', app_secret: '' },\n  { nome: 'PA', app_key: '', app_secret: '' },\n  { nome: 'SE', app_key: '', app_secret: '' }\n];\n\nreturn filiais.map(f => ({ json: f }));"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -384,
+        176
+      ],
+      "id": "c60cf138-8fb2-44b4-8634-805444273a7f",
+      "name": "definir filiais"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://app.omie.com.br/api/v1/geral/contacorrente/",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n    \"call\": \"ListarContasCorrentes\",\n    \"app_key\": \"{{ $json.app_key }}\",\n    \"app_secret\": \"{{ $json.app_secret }}\",\n    \"param\": [\n        {\n            \"pagina\": 1,\n            \"registros_por_pagina\": 100\n        }\n    ]\n}",
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        288,
+        32
+      ],
+      "id": "24334810-89de-4ce8-94e9-8f75bb21bdd3",
+      "name": "Buscar contas das filiais"
+    },
+    {
+      "parameters": {
+        "jsCode": "const dadosDeEntrada = items[0].json;\nconst listaCompleta = dadosDeEntrada.ListarContasCorrentes;\n\nif (!Array.isArray(listaCompleta)) {\n  return [{ json: { lista_filial: [] } }];\n}\n\nconst listaFiltrada = listaCompleta.map(conta => {\n  return {\n    descricao: conta.descricao\n  };\n});\n\nreturn [{ json: { lista_filial: listaFiltrada } }];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        512,
+        32
+      ],
+      "id": "e6e96e0a-fc57-49f5-8dfd-a966fdae0140",
+      "name": "Limpar lista da Filial"
+    },
+    {
+      "parameters": {
+        "jsCode": "const listaFilial = $json.lista_filial;\nconst nomesNaFilial = new Set(listaFilial.map(conta => conta.descricao));\n\nconst listaMestra = $('Limpar Lista Mestra').first().json.lista_mestra;\n\nconst contasParaCriar = listaMestra.filter(contaMestra => !nomesNaFilial.has(contaMestra.descricao));\n\nreturn [{\n  json: {\n    contas_a_serem_criadas: contasParaCriar\n  }\n}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        736,
+        32
+      ],
+      "id": "cd7f72f5-49da-449e-b20d-d01be69b7fc3",
+      "name": "Comparar e encontrar faltantes"
+    },
+    {
+      "parameters": {
+        "jsCode": "const dadosDeEntrada = items[0].json;\nconst listaCompleta = dadosDeEntrada.ListarContasCorrentes;\n\nif (!Array.isArray(listaCompleta)) {\n  throw new Error(\"A lista de contas da Matriz não foi encontrada!\");\n}\n\nconst listaFiltrada = listaCompleta.map(conta => {\n\n  const codigoIntegracao = (conta.cCodCCInt || conta.descricao).substring(0, 20);\n\n  return {\n    cCodCCInt: codigoIntegracao,\n    descricao: conta.descricao,\n    tipo_conta_corrente: conta.tipo_conta_corrente,\n    codigo_banco: conta.codigo_banco,\n    codigo_agencia: conta.codigo_agencia,\n    numero_conta_corrente: conta.numero_conta_corrente\n  };\n});\n\nreturn [{ json: { lista_mestra: listaFiltrada } }];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -608,
+        176
+      ],
+      "id": "978b6c6a-9755-40dd-8b35-01ef193211b4",
+      "name": "Limpar Lista Mestra"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "aeac99e9-50ac-4ca8-bf7b-0863b22e8e52",
+              "leftValue": "={{ $json.contas_a_serem_criadas.length }}",
+              "rightValue": 0,
+              "operator": {
+                "type": "number",
+                "operation": "gt"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        960,
+        32
+      ],
+      "id": "3192648d-2c2f-41d7-bee4-6c835cf724fc",
+      "name": "Verificar se Há Contas para Criar"
+    },
+    {
+      "parameters": {
+        "options": {
+          "reset": false
+        }
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        1408,
+        128
+      ],
+      "id": "93ccc33e-f1c0-4734-9e4a-621d9fe7385a",
+      "name": "Loop Contas a Criar",
+      "alwaysOutputData": false,
+      "notesInFlow": false
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        -160,
+        176
+      ],
+      "id": "0de90c25-5be9-448e-a028-00f50d1d1238",
+      "name": "Loop Filiais"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://app.omie.com.br/api/v1/geral/contacorrente/",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"call\": \"IncluirContaCorrente\",\n  \"app_key\": \"{{ $('Loop Filiais').first().json.app_key }}\",\n  \"app_secret\": \"{{ $('Loop Filiais').first().json.app_secret }}\",\n  \"param\": [\n    {\n      \"cCodCCInt\": \"{{ $json.cCodCCInt }}\",\n      \"descricao\": \"{{ $json.descricao }}\",\n      \"tipo_conta_corrente\": \"{{ $json.tipo_conta_corrente }}\",\n      \"codigo_banco\": \"{{ $json.codigo_banco }}\",\n      \"codigo_agencia\": \"{{ $json.codigo_agencia }}\",\n      \"numero_conta_corrente\": \"{{ $json.numero_conta_corrente }}\"\n    }\n  ]\n}",
+        "options": {
+          "response": {
+            "response": {
+              "responseFormat": "json"
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1472,
+        -176
+      ],
+      "id": "ec4634cd-25c0-40d9-a753-e771632a10f3",
+      "name": "Criando contas..."
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -1056,
+        176
+      ],
+      "id": "6fee8455-079c-415f-9a68-0b89be535672",
+      "name": "Clique em Executar para Adicionar as Contas"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://app.omie.com.br/api/v1/geral/contacorrente/",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n    \"call\": \"ListarContasCorrentes\",\n    \"app_key\": \"\",\n    \"app_secret\": \"\",\n    \"param\": [\n        {\n            \"pagina\": 1,\n            \"registros_por_pagina\": 100\n        }\n    ]\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -832,
+        176
+      ],
+      "id": "51af1eaf-2b0e-45d6-9b44-f864eb9b34e0",
+      "name": "Lista de todas as contas correntes da matriz"
+    },
+    {
+      "parameters": {
+        "amount": 1
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        64,
+        32
+      ],
+      "id": "d0b12ff1-5cc1-4ad2-a6e4-c43b2c5ed059",
+      "name": "1 sec",
+      "webhookId": "2c6a8146-134a-4394-92b1-89af9ed9ac3d"
+    },
+    {
+      "parameters": {
+        "amount": 0.5
+      },
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        1856,
+        96
+      ],
+      "id": "b93bc856-75b7-49f3-b3ee-2c542d0f8ab6",
+      "name": "1 sec1",
+      "webhookId": "922b6fcb-952c-4fd8-9f82-19244870d4b3"
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "contas_a_serem_criadas",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        1184,
+        32
+      ],
+      "id": "f6cd4fb8-a016-47d3-99b8-50e14015bcd6",
+      "name": "Split Out"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "definir filiais": {
+      "main": [
+        [
+          {
+            "node": "Loop Filiais",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Buscar contas das filiais": {
+      "main": [
+        [
+          {
+            "node": "Limpar lista da Filial",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Limpar lista da Filial": {
+      "main": [
+        [
+          {
+            "node": "Comparar e encontrar faltantes",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Comparar e encontrar faltantes": {
+      "main": [
+        [
+          {
+            "node": "Verificar se Há Contas para Criar",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Limpar Lista Mestra": {
+      "main": [
+        [
+          {
+            "node": "definir filiais",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Verificar se Há Contas para Criar": {
+      "main": [
+        [
+          {
+            "node": "Split Out",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Loop Filiais",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Contas a Criar": {
+      "main": [
+        [
+          {
+            "node": "Loop Filiais",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Filiais": {
+      "main": [
+        [],
+        [
+          {
+            "node": "1 sec",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Criando contas...": {
+      "main": [
+        [
+          {
+            "node": "1 sec1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Clique em Executar para Adicionar as Contas": {
+      "main": [
+        [
+          {
+            "node": "Lista de todas as contas correntes da matriz",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Lista de todas as contas correntes da matriz": {
+      "main": [
+        [
+          {
+            "node": "Limpar Lista Mestra",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "1 sec": {
+      "main": [
+        [
+          {
+            "node": "Buscar contas das filiais",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "1 sec1": {
+      "main": [
+        [
+          {
+            "node": "Loop Contas a Criar",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Out": {
+      "main": [
+        [
+          {
+            "node": "Criando contas...",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "466247bc-ba16-460b-9f63-a0fe3753f727",
+  "meta": {
+    "instanceId": "e4e897c8a435e9272f2a0de0d79d4b6a45a2605403c7c3b29d983dc095e7a6fe"
+  },
+  "id": "3FyQ2CyDl76Z331U",
+  "tags": []
+}

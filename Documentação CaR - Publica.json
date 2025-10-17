@@ -1,0 +1,2743 @@
+{
+  "name": "Documentação",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "contasareceber",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -256,
+        1600
+      ],
+      "id": "e64714cb-7362-4d51-ba9a-e527601df190",
+      "name": "Webhook",
+      "webhookId": "<REDACTED_WEBHOOK_ID>"
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "6730ac29-1b62-471d-a96c-970317ad64a1",
+                    "leftValue": "={{ $<REDACTED_JWT> }}",
+                    "rightValue": "API",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "<REDACTED_JWT>"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "SC"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "aa04fc56-f0e1-4c46-a04f-f575e7ee3d9c",
+                    "leftValue": "={{ $<REDACTED_JWT> }}",
+                    "rightValue": "API",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "<REDACTED_JWT>"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "SP"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "13a13c74-05c8-4c01-a7ee-50461185c78c",
+                    "leftValue": "={{ $<REDACTED_JWT> }}",
+                    "rightValue": "API",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "<REDACTED_JWT>"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "ES"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "49f76bb1-b4f5-466a-848a-9adba90e8524",
+                    "leftValue": "={{ $<REDACTED_JWT> }}",
+                    "rightValue": "API",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "<REDACTED_JWT>"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "SE"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "173cf9da-4416-4f84-a79f-1f8fa6d9e802",
+                    "leftValue": "={{ $<REDACTED_JWT> }}",
+                    "rightValue": "API",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "<REDACTED_JWT>"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "MG"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "3b6afe27-eb87-4c00-8300-58f6ff40dced",
+                    "leftValue": "={{ $<REDACTED_JWT> }}",
+                    "rightValue": "API",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "<REDACTED_JWT>"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "PA"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "a5cac202-723b-43c1-96a5-1a2383284925",
+                    "leftValue": "={{ $<REDACTED_JWT> }}",
+                    "rightValue": "API",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "<REDACTED_JWT>"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "RJ"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "6690da6f-1048-46fc-a1dd-1da0a33301c3",
+                    "leftValue": "={{ $<REDACTED_JWT> }}",
+                    "rightValue": "API",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "<REDACTED_JWT>"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "RS"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        192,
+        736
+      ],
+      "id": "84aa6bad-d23b-4c4c-9423-b9c6ef913bc3",
+      "name": "Switch"
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $<REDACTED_JWT> }}",
+                    "rightValue": "<REDACTED_JWT>",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "f88f3a23-928f-45a6-8c90-145bd8b6022d"
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Inclusao"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "ebb08837-7057-4236-ad5e-6f41df6d4f6b",
+                    "leftValue": "={{ $<REDACTED_JWT> }}",
+                    "rightValue": "<REDACTED_JWT>",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "<REDACTED_JWT>"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Alteracao"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "7843a487-a5a1-4dd1-a1ca-a9685c208603",
+                    "leftValue": "={{ $<REDACTED_JWT> }}",
+                    "rightValue": "<REDACTED_JWT>",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "<REDACTED_JWT>"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Exclusao"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        -32,
+        1584
+      ],
+      "id": "41949402-fed9-4370-8962-c30e78c8480d",
+      "name": "Switch1"
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "7fbfcdd0-f68b-4224-9dc2-5b50f847252a",
+                    "leftValue": "={{ $json.cod_lan_es }}",
+                    "rightValue": 0,
+                    "operator": {
+                      "type": "number",
+                      "operation": "notEquals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "ES"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "f219ee33-bba4-4eb2-a919-2cb8701768c6",
+                    "leftValue": "={{ $json.cod_lan_sc }}",
+                    "rightValue": 0,
+                    "operator": {
+                      "type": "number",
+                      "operation": "notEquals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "SC"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "ca5a8d1e-cbe5-4925-bbe1-f51d8d73a382",
+                    "leftValue": "={{ $json.cod_lan_sp }}",
+                    "rightValue": 0,
+                    "operator": {
+                      "type": "number",
+                      "operation": "notEquals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "SP"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "4153a8d4-fe27-41ee-a17f-3820aac52945",
+                    "leftValue": "={{ $json.cod_lan_se }}",
+                    "rightValue": 0,
+                    "operator": {
+                      "type": "number",
+                      "operation": "notEquals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "SE"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "e530d00b-223e-4b08-af3b-1f2debff282f",
+                    "leftValue": "={{ $json.cod_lan_mg }}",
+                    "rightValue": 0,
+                    "operator": {
+                      "type": "number",
+                      "operation": "notEquals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "MG"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "fbb76f4e-6300-4208-8924-7c129b15fedd",
+                    "leftValue": "={{ $json.cod_lan_pa }}",
+                    "rightValue": 0,
+                    "operator": {
+                      "type": "number",
+                      "operation": "notEquals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "PA"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "9b98b8dd-57af-46ed-98f5-176d6344223f",
+                    "leftValue": "={{ $json.cod_lan_rj }}",
+                    "rightValue": 0,
+                    "operator": {
+                      "type": "number",
+                      "operation": "notEquals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "RJ"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "ed0c6f59-892f-49aa-85e1-812288d6c47e",
+                    "leftValue": "={{ $json.cod_lan_rs }}",
+                    "rightValue": 0,
+                    "operator": {
+                      "type": "number",
+                      "operation": "notEquals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "RS"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.3,
+      "position": [
+        640,
+        2272
+      ],
+      "id": "2c999dd7-e915-4863-a3d7-5ab381a766ef",
+      "name": "Switch2"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://<REDACTED_JWT>.br/api/v1/financas/contareceber/",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"call\": \"LancarRecebimento\",\n  \"app_key\": \"<REDACTED_APP_KEY>\",\n  \"app_secret\": \"<REDACTED_APP_SECRET>\",\n  \"param\": [\n    {\n      \"codigo_lancamento\": {{ $json.cod_lan_sc }},\n      \"codigo_lancamento_integracao\": \"\",\n      \"codigo_baixa_integracao\": \"\",\n      \"codigo_conta_corrente\": \"8691381034\",\n      \"valor\": 0,\n      \"desconto\": {{ $('Webhook').<REDACTED_JWT>.event[0].valor }},\n      \"juros\": 0,\n      \"multa\": 0,\n      \"data\": \"{{ $now.toFormat('dd/MM/yyyy') }}\",\n      \"observacao\": \"Baixa de documento realizada por automatização N8N.\"\n    }\n  ]\n}",
+        "options": {}
+      },
+      "id": "f626d8af-ad82-4740-b9d0-017e42eaf04c",
+      "name": "Deletar Omie SC",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        864,
+        1888
+      ],
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://<REDACTED_JWT>.br/api/v1/financas/contareceber/",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"call\": \"LancarRecebimento\",\n  \"app_key\": \"<REDACTED_APP_KEY>\",\n  \"app_secret\": \"<REDACTED_APP_SECRET>\",\n  \"param\": [\n    {\n      \"codigo_lancamento\": {{ $json.cod_lan_es }},\n      \"codigo_lancamento_integracao\": \"\",\n      \"codigo_baixa_integracao\": \"\",\n      \"codigo_conta_corrente\": \"2769905368\",\n      \"valor\": 0,\n      \"desconto\": {{ $('Webhook').<REDACTED_JWT>.event[0].valor }},\n      \"juros\": 0,\n      \"multa\": 0,\n      \"data\": \"{{ $now.toFormat('dd/MM/yyyy') }}\",\n      \"observacao\": \"Baixa de documento realizada por automatização N8N.\"\n    }\n  ]\n}",
+        "options": {}
+      },
+      "id": "7c52f17f-7485-44ce-91c2-214e0061e702",
+      "name": "Deletar Omie ES",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        864,
+        1696
+      ],
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://<REDACTED_JWT>.br/api/v1/financas/contareceber/",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"call\": \"LancarRecebimento\",\n  \"app_key\": \"<REDACTED_APP_KEY>\",\n  \"app_secret\": \"<REDACTED_APP_SECRET>\",\n  \"param\": [\n    {\n      \"codigo_lancamento\": {{ $json.cod_lan_se }},\n      \"codigo_lancamento_integracao\": \"\",\n      \"codigo_baixa_integracao\": \"\",\n      \"codigo_conta_corrente\": \"10876921182\",\n      \"valor\": 0,\n      \"desconto\": {{ $('Webhook').<REDACTED_JWT>.event[0].valor }},\n      \"juros\": 0,\n      \"multa\": 0,\n      \"data\": \"{{ $now.toFormat('dd/MM/yyyy') }}\",\n      \"observacao\": \"Baixa de documento realizada por automatização N8N.\"\n    }\n  ]\n}",
+        "options": {}
+      },
+      "id": "80cbc491-ec0c-402b-95ea-560078b8ba26",
+      "name": "Deletar Omie SE",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        864,
+        2272
+      ],
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://<REDACTED_JWT>.br/api/v1/financas/contareceber/",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"call\": \"LancarRecebimento\",\n  \"app_key\": \"<REDACTED_APP_KEY>\",\n  \"app_secret\": \"<REDACTED_APP_SECRET>\",\n  \"param\": [\n    {\n      \"codigo_lancamento\": {{ $json.cod_lan_sp }},\n      \"codigo_lancamento_integracao\": \"\",\n      \"codigo_baixa_integracao\": \"\",\n      \"codigo_conta_corrente\": \"8421590448\",\n      \"valor\": 0,\n      \"desconto\": {{ $('Webhook').<REDACTED_JWT>.event[0].valor }},\n      \"juros\": 0,\n      \"multa\": 0,\n      \"data\": \"{{ $now.toFormat('dd/MM/yyyy') }}\",\n      \"observacao\": \"Baixa de documento realizada por automatização N8N.\"\n    }\n  ]\n}",
+        "options": {}
+      },
+      "id": "0e8dbf98-e344-4cb8-8755-f7c8b1918c75",
+      "name": "Deletar Omie SP",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        864,
+        2080
+      ],
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://<REDACTED_JWT>.br/api/v1/financas/contareceber/",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"call\": \"LancarRecebimento\",\n  \"app_key\": \"<REDACTED_APP_KEY>\",\n  \"app_secret\": \"<REDACTED_APP_SECRET>\",\n  \"param\": [\n    {\n      \"codigo_lancamento\": {{ $json.cod_lan_mg }},\n      \"codigo_lancamento_integracao\": \"\",\n      \"codigo_baixa_integracao\": \"\",\n      \"codigo_conta_corrente\": \"3179682919\",\n      \"valor\": 0,\n      \"desconto\": {{ $('Webhook').<REDACTED_JWT>.event[0].valor }},\n      \"juros\": 0,\n      \"multa\": 0,\n      \"data\": \"{{ $now.toFormat('dd/MM/yyyy') }}\",\n      \"observacao\": \"Baixa de documento realizada por automatização N8N.\"\n    }\n  ]\n}",
+        "options": {}
+      },
+      "id": "2ad35fc8-06c5-4d34-b976-82c73d071347",
+      "name": "Deletar Omie MG",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        864,
+        2464
+      ],
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://<REDACTED_JWT>.br/api/v1/financas/contareceber/",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"call\": \"LancarRecebimento\",\n  \"app_key\": \"<REDACTED_APP_KEY>\",\n  \"app_secret\": \"<REDACTED_APP_SECRET>\",\n  \"param\": [\n    {\n      \"codigo_lancamento\": {{ $json.cod_lan_pa }},\n      \"codigo_lancamento_integracao\": \"\",\n      \"codigo_baixa_integracao\": \"\",\n      \"codigo_conta_corrente\": \"10829994845\",\n      \"valor\": 0,\n      \"desconto\": {{ $('Webhook').<REDACTED_JWT>.event[0].valor }},\n      \"juros\": 0,\n      \"multa\": 0,\n      \"data\": \"{{ $now.toFormat('dd/MM/yyyy') }}\",\n      \"observacao\": \"Baixa de documento realizada por automatização N8N.\"\n    }\n  ]\n}",
+        "options": {}
+      },
+      "id": "5ebe5d7f-099a-4d77-8836-dbdc68be1733",
+      "name": "Deletar Omie PA",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        864,
+        2656
+      ],
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://<REDACTED_JWT>.br/api/v1/financas/contareceber/",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"call\": \"LancarRecebimento\",\n  \"app_key\": \"<REDACTED_APP_KEY>\",\n  \"app_secret\": \"<REDACTED_APP_SECRET>\",\n  \"param\": [\n    {\n      \"codigo_lancamento\": {{ $json.cod_lan_rj }},\n      \"codigo_lancamento_integracao\": \"\",\n      \"codigo_baixa_integracao\": \"\",\n      \"codigo_conta_corrente\": \"4309220284\",\n      \"valor\": 0,\n      \"desconto\": {{ $('Webhook').<REDACTED_JWT>.event[0].valor }},\n      \"juros\": 0,\n      \"multa\": 0,\n      \"data\": \"{{ $now.toFormat('dd/MM/yyyy') }}\",\n      \"observacao\": \"Baixa de documento realizada por automatização N8N.\"\n    }\n  ]\n}",
+        "options": {}
+      },
+      "id": "b0cd5a9c-d671-4562-b54f-0c4545eeb614",
+      "name": "Deletar Omie RJ",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        864,
+        2848
+      ],
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://<REDACTED_JWT>.br/api/v1/financas/contareceber/",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"call\": \"LancarRecebimento\",\n  \"app_key\": \"<REDACTED_APP_KEY>\",\n  \"app_secret\": \"<REDACTED_APP_SECRET>\",\n  \"param\": [\n    {\n      \"codigo_lancamento\": {{ $json.cod_lan_rs }},\n      \"codigo_lancamento_integracao\": \"\",\n      \"codigo_baixa_integracao\": \"\",\n      \"codigo_conta_corrente\": \"1906449967\",\n      \"valor\": 0,\n      \"desconto\": {{ $('Webhook').<REDACTED_JWT>.event[0].valor }},\n      \"juros\": 0,\n      \"multa\": 0,\n      \"data\": \"{{ $now.toFormat('dd/MM/yyyy') }}\",\n      \"observacao\": \"Baixa de documento realizada por automatização N8N.\"\n    }\n  ]\n}",
+        "options": {}
+      },
+      "id": "4d4b8e7a-405d-4af7-b531-6de9e23df482",
+      "name": "Deletar Omie RS",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        864,
+        3040
+      ],
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "jsCode": "return items.map(item => {\n  const evt = <REDACTED_JWT> && <REDACTED_JWT>.event;\n  if (!evt) {\n    return item;\n  }\n\n  const camposData = [\n    'data_emissao',\n    'data_previsao',\n    'data_registro',\n    'data_vencimento'\n  ];\n\n  camposData.forEach(campo => {\n    const valorISO = evt[campo];\n    if (valorISO) {\n      const d = new Date(valorISO);\n      const dd = String(d.getDate()).padStart(2, '0');\n      const mm = String(d.getMonth() + 1).padStart(2, '0');\n      const yyyy = d.getFullYear();\n      evt[campo] = `${dd}/${mm}/${yyyy}`;\n    }\n  });\n\n  const mapeamentoCategorias = {\n    \"<REDACTED_JWT>\": \"<REDACTED_JWT>\", // Clientes - Venda de Mercadoria\n    \"<REDACTED_JWT>\": \"<REDACTED_JWT>\", // Clientes - Serviços Prestados\n    \"<REDACTED_JWT>\": \"<REDACTED_JWT>\" // Clientes - Revenda de Mercadoria\n  };\n\n  const codigoOrigem = evt.codigo_categoria;\n  const codigoDestino = mapeamentoCategorias[codigoOrigem] || codigoOrigem;\n\n  <REDACTED_JWT> = codigoDestino;\n\n  const mapeamentoBancos = {\n\n\n  };\n  \n  const idBancoOrigem = evt.id_conta_corrente;\n  const idBancoDestino = mapeamentoBancos[idBancoOrigem] || idBancoOrigem;\n  \n  <REDACTED_JWT> = idBancoDestino;\n\n\n  return item;\n});"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        416,
+        352
+      ],
+      "id": "1f7997eb-05dc-4284-b97e-7e4d205a54af",
+      "name": "Tradutor e Preparador de Dados SP",
+      "alwaysOutputData": true
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "tableId": "omieClientes",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "codigo_cliente_sp",
+              "keyValue": "={{ $('Webhook').<REDACTED_JWT>.event.codigo_cliente_fornecedor }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        1088,
+        352
+      ],
+      "id": "4dfd9e32-3680-4904-b075-3ddc1cac0188",
+      "name": "Pega a Lista de Clientes SP",
+      "alwaysOutputData": true,
+      "credentials": {
+        "supabaseApi": {
+          "id": "Mjlwj1Q3EnxkKPu3",
+          "name": "Teste 1-1"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://<REDACTED_JWT>.br/api/v1/financas/contareceber/",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"call\": \"IncluirContaReceber\",\n  \"app_key\": \"<REDACTED_APP_KEY>\",\n  \"app_secret\": \"<REDACTED_APP_SECRET>\",\n  \"param\": [\n    {\n      \"codigo_lancamento_integracao\": \"{{ (() => {\n        let s = '';\n        for (let i = 0; i < 60; i++) {\n          s += Math.floor(Math.random() * 10);\n        }\n        return s;\n      })() }}\",\n      \"codigo_cliente_fornecedor\": {{ $json.codigo_cliente_pr }},\n      \"data_vencimento\": \"{{ $('Tradutor e Preparador de Dados SP').<REDACTED_JWT>.event.data_vencimento }}\",\n      \"valor_documento\": \"{{ $('Webhook').<REDACTED_JWT>.event.valor_documento }}\",\n      \"data_previsao\": \"{{ $('Tradutor e Preparador de Dados SP').<REDACTED_JWT>.event.data_previsao }}\",\n      \"id_conta_corrente\": {{ $('Lista de Bancos SP').<REDACTED_JWT> }},\n      \"codigo_categoria\": \"{{ $('Tradutor e Preparador de Dados SP').<REDACTED_JWT> }}\",\n      \"data_emissao\": \"{{ $('Tradutor e Preparador de Dados SP').<REDACTED_JWT>.event.data_emissao }}\",\n      \"numero_documento_fiscal\": \"{{ $('Webhook').<REDACTED_JWT>.event.numero_documento_fiscal }}\",\n      \"observacao\": \"Conta importada automaticamente N8N - NF{{ $('Webhook').<REDACTED_JWT>.event.numero_documento_fiscal }}. Filial de Origem: SP.\",\n      \"numero_parcela\": \"{{ $('Webhook').<REDACTED_JWT>.event.numero_parcela }}\",\n      \"chave_nfe\": \"{{ $('Webhook').<REDACTED_JWT>.event.chave_nfe }}\",\n      \"id_origem\": \"{{ $('Webhook').<REDACTED_JWT>.event.id_origem }}\",\n      \"importado_api\": \"S\",\n      \"numero_pedido\": \"{{ $('Webhook').<REDACTED_JWT>.event.numero_pedido }}\",\n      \"codigo_tipo_documento\": \"{{ $('Webhook').<REDACTED_JWT>.event.codigo_tipo_documento }}\",\n      \"numero_documento\": \"{{ $('Webhook').<REDACTED_JWT>.event.numero_documento }}\",\n      \"numero_pedido\": \"{{ $('Webhook').<REDACTED_JWT>.event.numero_pedido }}\",\n      \"codigo_vendedor\": {{ $('Lista de Vendedores SP').<REDACTED_JWT> }}\n    }\n  ]\n}",
+        "options": {}
+      },
+      "id": "f573b18a-7970-4590-91ec-5a9ffe071146",
+      "name": "Envia pro OMIE SP -> PR",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1312,
+        352
+      ],
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "tableId": "omieContasAreceber",
+        "fieldsUi": {
+          "fieldValues": [
+            {
+              "fieldId": "cod_lan_sp",
+              "fieldValue": "={{ $('Tradutor e Preparador de Dados SP').<REDACTED_JWT>.event.codigo_lancamento_omie }}"
+            },
+            {
+              "fieldId": "cod_lan_pr",
+              "fieldValue": "={{ $json.codigo_lancamento_omie }}"
+            },
+            {
+              "fieldId": "cod_lan_inte_pr",
+              "fieldValue": "={{ $json.codigo_lancamento_integracao }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        1536,
+        352
+      ],
+      "id": "60b79245-1fd4-49f9-a9c6-ddba35725ee7",
+      "name": "Cria Coluna com o Pedido SP"
+    },
+    {
+      "parameters": {
+        "jsCode": "return items.map(item => {\n  const evt = <REDACTED_JWT> && <REDACTED_JWT>.event;\n  if (!evt) {\n    return item;\n  }\n\n  const camposData = [\n    'data_emissao',\n    'data_previsao',\n    'data_registro',\n    'data_vencimento'\n  ];\n\n  camposData.forEach(campo => {\n    const valorISO = evt[campo];\n    if (valorISO) {\n      const d = new Date(valorISO);\n      const dd = String(d.getDate()).padStart(2, '0');\n      const mm = String(d.getMonth() + 1).padStart(2, '0');\n      const yyyy = d.getFullYear();\n      evt[campo] = `${dd}/${mm}/${yyyy}`;\n    }\n  });\n\n  const mapeamentoCategorias = {\n    \"<REDACTED_JWT>\": \"<REDACTED_JWT>\", // Clientes - Venda de Mercadoria\n    \"<REDACTED_JWT>\": \"<REDACTED_JWT>\", // Clientes - Serviços Prestados\n    \"<REDACTED_JWT>\": \"<REDACTED_JWT>\" // Clientes - Revenda de Mercadoria\n  };\n\n  const codigoOrigem = evt.codigo_categoria;\n  const codigoDestino = mapeamentoCategorias[codigoOrigem] || codigoOrigem;\n\n  <REDACTED_JWT> = codigoDestino;\n\n  const mapeamentoBancos = {\n\n    \n\n  };\n  \n  const idBancoOrigem = evt.id_conta_corrente;\n  const idBancoDestino = mapeamentoBancos[idBancoOrigem] || idBancoOrigem;\n  \n  <REDACTED_JWT> = idBancoDestino;\n\nconst mapeamentoVendedores = {\n\n  \n};\nconst idVendedorOrigem = evt.codigo_vendedor; \nconst idVendedorDestino = mapeamentoVendedores[idVendedorOrigem] || idVendedorOrigem;\n<REDACTED_JWT> = idVendedorDestino;\n\n  return item;\n});"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        416,
+        160
+      ],
+      "id": "f49d6569-809f-4c0d-9632-da6412987bd8",
+      "name": "Tradutor e Preparador de Dados SC"
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "tableId": "omieClientes",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "codigo_cliente_sc",
+              "keyValue": "={{ $('Webhook').<REDACTED_JWT>.event.codigo_cliente_fornecedor }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        1088,
+        160
+      ],
+      "id": "c053f6c0-df50-4d55-bb7d-71ce859ada0f",
+      "name": "Pega de Lista de Clientes SC"
+    },
+    {
+      "parameters": {
+        "tableId": "omieContasAreceber",
+        "fieldsUi": {
+          "fieldValues": [
+            {
+              "fieldId": "cod_lan_sc",
+              "fieldValue": "={{ $('Tradutor e Preparador de Dados SC').<REDACTED_JWT>.event.codigo_lancamento_omie }}"
+            },
+            {
+              "fieldId": "cod_lan_pr",
+              "fieldValue": "={{ $json.codigo_lancamento_omie }}"
+            },
+            {
+              "fieldId": "cod_lan_inte_pr",
+              "fieldValue": "={{ $json.codigo_lancamento_integracao }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        1536,
+        160
+      ],
+      "id": "16fe16ee-885d-4f47-80e1-63d4e61a0973",
+      "name": "Cria Coluna com o Pedido SC",
+      "credentials": {
+        "supabaseApi": {
+          "id": "Mjlwj1Q3EnxkKPu3",
+          "name": "Teste 1-1"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://<REDACTED_JWT>.br/api/v1/financas/contareceber/",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"call\": \"IncluirContaReceber\",\n  \"app_key\": \"<REDACTED_APP_KEY>\",\n  \"app_secret\": \"<REDACTED_APP_SECRET>\",\n  \"param\": [\n    {\n      \"codigo_lancamento_integracao\": \"{{ (() => {\n        let s = '';\n        for (let i = 0; i < 60; i++) {\n          s += Math.floor(Math.random() * 10);\n        }\n        return s;\n      })() }}\",\n      \"codigo_cliente_fornecedor\": \"{{ $json.codigo_cliente_pr }}\",\n      \"data_vencimento\": \"{{ $('Tradutor e Preparador de Dados SP').<REDACTED_JWT>.event.data_vencimento }}\",\n      \"valor_documento\": \"{{ $('Webhook').<REDACTED_JWT>.event.valor_documento }}\",\n      \"data_previsao\": \"{{ $('Tradutor e Preparador de Dados SP').<REDACTED_JWT>.event.data_previsao }}\",\n      \"id_conta_corrente\": {{ $('Lista de Bancos SC').<REDACTED_JWT> }},\n      \"codigo_categoria\": \"{{ $('Tradutor e Preparador de Dados SP').<REDACTED_JWT> }}\",\n      \"data_emissao\": \"{{ $('Tradutor e Preparador de Dados SP').<REDACTED_JWT>.event.data_emissao }}\",\n      \"numero_documento_fiscal\": \"{{ $('Webhook').<REDACTED_JWT>.event.numero_documento_fiscal }}\",\n      \"observacao\": \"Conta importada automaticamente N8N - NF{{ $('Webhook').<REDACTED_JWT>.event.numero_documento_fiscal }}. Filial de Origem: SC.\",\n      \"numero_parcela\": \"{{ $('Webhook').<REDACTED_JWT>.event.numero_parcela }}\",\n      \"chave_nfe\": \"{{ $('Webhook').<REDACTED_JWT>.event.chave_nfe }}\",\n      \"id_origem\": \"{{ $('Webhook').<REDACTED_JWT>.event.id_origem }}\",\n      \"importado_api\": \"S\",\n      \"numero_pedido\": \"{{ $('Webhook').<REDACTED_JWT>.event.numero_pedido }}\",\n      \"codigo_tipo_documento\": \"{{ $('Webhook').<REDACTED_JWT>.event.codigo_tipo_documento }}\",\n      \"numero_documento\": \"{{ $('Webhook').<REDACTED_JWT>.event.numero_documento }}\"\n      \"numero_pedido\": \"{{ $('Webhook').<REDACTED_JWT>.event.numero_pedido }}\",\n      \"codigo_vendedor\": \"{{ $('Lista de Vendedores SC').<REDACTED_JWT> }}\",\n    }\n  ]\n}",
+        "options": {}
+      },
+      "id": "1d2e88e8-a1fd-495d-8a7f-278705cb1b59",
+      "name": "Envia pro Omie SC -> PR",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1312,
+        160
+      ],
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "jsCode": "return items.map(item => {\n  const evt = <REDACTED_JWT> && <REDACTED_JWT>.event;\n  if (!evt) {\n    return item;\n  }\n\n  const camposData = [\n    'data_emissao',\n    'data_previsao',\n    'data_registro',\n    'data_vencimento'\n  ];\n\n  camposData.forEach(campo => {\n    const valorISO = evt[campo];\n    if (valorISO) {\n      const d = new Date(valorISO);\n      const dd = String(d.getDate()).padStart(2, '0');\n      const mm = String(d.getMonth() + 1).padStart(2, '0');\n      const yyyy = d.getFullYear();\n      evt[campo] = `${dd}/${mm}/${yyyy}`;\n    }\n  });\n\n  const mapeamentoCategorias = {\n    \"<REDACTED_JWT>\": \"<REDACTED_JWT>\", // Clientes - Venda de Mercadoria\n    \"<REDACTED_JWT>\": \"<REDACTED_JWT>\", // Clientes - Serviços Prestados\n    \"<REDACTED_JWT>\": \"<REDACTED_JWT>\" // Clientes - Revenda de Mercadoria\n  };\n\n  const codigoOrigem = evt.codigo_categoria;\n  const codigoDestino = mapeamentoCategorias[codigoOrigem] || codigoOrigem;\n\n  <REDACTED_JWT> = codigoDestino;\n\n  const mapeamentoBancos = {\n\n    \n\n  };\n  \n  const idBancoOrigem = evt.id_conta_corrente;\n  const idBancoDestino = mapeamentoBancos[idBancoOrigem] || idBancoOrigem;\n  \n  <REDACTED_JWT> = idBancoDestino;\n\nconst mapeamentoVendedores = {\n\n};\nconst idVendedorOrigem = evt.codigo_vendedor; \nconst idVendedorDestino = mapeamentoVendedores[idVendedorOrigem] || idVendedorOrigem;\n<REDACTED_JWT> = idVendedorDestino;\n\n  return item;\n});"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        416,
+        544
+      ],
+      "id": "fb12e6e9-690a-4aad-9920-a012e69a40bd",
+      "name": "Tradutor e Preparador de Dados ES"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://<REDACTED_JWT>.br/api/v1/financas/contareceber/",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"call\": \"IncluirContaReceber\",\n  \"app_key\": \"<REDACTED_APP_KEY>\",\n  \"app_secret\": \"<REDACTED_APP_SECRET>\",\n  \"param\": [\n    {\n      \"codigo_lancamento_integracao\": \"{{ (() => {\n        let s = '';\n        for (let i = 0; i < 60; i++) {\n          s += Math.floor(Math.random() * 10);\n        }\n        return s;\n      })() }}\",\n      \"codigo_cliente_fornecedor\": \"{{ $json.codigo_cliente_pr }}\",\n      \"data_vencimento\": \"{{ $('Tradutor e Preparador de Dados SP').<REDACTED_JWT>.event.data_vencimento }}\",\n      \"valor_documento\": \"{{ $('Webhook').<REDACTED_JWT>.event.valor_documento }}\",\n      \"data_previsao\": \"{{ $('Tradutor e Preparador de Dados SP').<REDACTED_JWT>.event.data_previsao }}\",\n      \"id_conta_corrente\": \"{{ $('Lista de Bancos ES').<REDACTED_JWT> }}\",\n      \"codigo_categoria\": \"{{ $('Tradutor e Preparador de Dados SP').<REDACTED_JWT> }}\",\n      \"data_emissao\": \"{{ $('Tradutor e Preparador de Dados SP').<REDACTED_JWT>.event.data_emissao }}\",\n      \"numero_documento_fiscal\": \"{{ $('Webhook').<REDACTED_JWT>.event.numero_documento_fiscal }}\",\n      \"observacao\": \"Conta importada automaticamente N8N - NF{{ $('Webhook').<REDACTED_JWT>.event.numero_documento_fiscal }}. Filial de Origem: ES.\",\n      \"numero_parcela\": \"{{ $('Webhook').<REDACTED_JWT>.event.numero_parcela }}\",\n      \"chave_nfe\": \"{{ $('Webhook').<REDACTED_JWT>.event.chave_nfe }}\",\n      \"id_origem\": \"{{ $('Webhook').<REDACTED_JWT>.event.id_origem }}\",\n      \"importado_api\": \"S\",\n      \"numero_pedido\": \"{{ $('Webhook').<REDACTED_JWT>.event.numero_pedido }}\",\n      \"codigo_tipo_documento\": \"{{ $('Webhook').<REDACTED_JWT>.event.codigo_tipo_documento }}\",\n      \"numero_documento\": \"{{ $('Webhook').<REDACTED_JWT>.event.numero_documento }}\"\n      \"numero_pedido\": \"{{ $('Webhook').<REDACTED_JWT>.event.numero_pedido }}\",\n      \"codigo_vendedor\": \"{{ $('Lista de Vendedores ES').<REDACTED_JWT> }}\",\n    }\n  ]\n}",
+        "options": {}
+      },
+      "id": "f3ba6a0a-1570-4e76-b00d-d377ce6b3b16",
+      "name": "Envia pro Omie ES -> PR",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1312,
+        544
+      ],
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "jsCode": "return items.map(item => {\n  const evt = <REDACTED_JWT> && <REDACTED_JWT>.event;\n  if (!evt) {\n    return item;\n  }\n\n  const camposData = [\n    'data_emissao',\n    'data_previsao',\n    'data_registro',\n    'data_vencimento'\n  ];\n\n  camposData.forEach(campo => {\n    const valorISO = evt[campo];\n    if (valorISO) {\n      const d = new Date(valorISO);\n      const dd = String(d.getDate()).padStart(2, '0');\n      const mm = String(d.getMonth() + 1).padStart(2, '0');\n      const yyyy = d.getFullYear();\n      evt[campo] = `${dd}/${mm}/${yyyy}`;\n    }\n  });\n\n  const mapeamentoCategorias = {\n    \"<REDACTED_JWT>\": \"<REDACTED_JWT>\", // Clientes - Venda de Mercadoria\n    \"<REDACTED_JWT>\": \"<REDACTED_JWT>\", // Clientes - Serviços Prestados\n    \"<REDACTED_JWT>\": \"<REDACTED_JWT>\" // Clientes - Revenda de Mercadoria\n  };\n\n  const codigoOrigem = evt.codigo_categoria;\n  const codigoDestino = mapeamentoCategorias[codigoOrigem] || codigoOrigem;\n\n  <REDACTED_JWT> = codigoDestino;\n\n  const mapeamentoBancos = {\n\n    \n\n  };\n  \n  const idBancoOrigem = evt.id_conta_corrente;\n  const idBancoDestino = mapeamentoBancos[idBancoOrigem] || idBancoOrigem;\n  \n  <REDACTED_JWT> = idBancoDestino;\n\nconst mapeamentoVendedores = {\n  \"12345\": 67890, // Exemplo: \"MERCADO LIVRE SP\"\n};\nconst idVendedorOrigem = evt.codigo_vendedor; \nconst idVendedorDestino = mapeamentoVendedores[idVendedorOrigem] || idVendedorOrigem;\n<REDACTED_JWT> = idVendedorDestino;\n\n  return item;\n});"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        416,
+        736
+      ],
+      "id": "e0a3075e-2351-4b13-9e52-f3fce8874925",
+      "name": "Tradutor e Preparador de Dados SE"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://<REDACTED_JWT>.br/api/v1/financas/contareceber/",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"call\": \"IncluirContaReceber\",\n  \"app_key\": \"<REDACTED_APP_KEY>\",\n  \"app_secret\": \"<REDACTED_APP_SECRET>\",\n  \"param\": [\n    {\n      \"codigo_lancamento_integracao\": \"{{ (() => {\n        let s = '';\n        for (let i = 0; i < 60; i++) {\n          s += Math.floor(Math.random() * 10);\n        }\n        return s;\n      })() }}\",\n      \"codigo_cliente_fornecedor\": \"{{ $json.codigo_cliente_pr }}\",\n      \"data_vencimento\": \"{{ $('Tradutor e Preparador de Dados SP').<REDACTED_JWT>.event.data_vencimento }}\",\n      \"valor_documento\": \"{{ $('Webhook').<REDACTED_JWT>.event.valor_documento }}\",\n      \"data_previsao\": \"{{ $('Tradutor e Preparador de Dados SP').<REDACTED_JWT>.event.data_previsao }}\",\n      \"id_conta_corrente\": \"{{ $('Lista de Bancos SE').<REDACTED_JWT> }}\",\n      \"codigo_categoria\": \"{{ $('Tradutor e Preparador de Dados SP').<REDACTED_JWT> }}\",\n      \"data_emissao\": \"{{ $('Tradutor e Preparador de Dados SP').<REDACTED_JWT>.event.data_emissao }}\",\n      \"numero_documento_fiscal\": \"{{ $('Webhook').<REDACTED_JWT>.event.numero_documento_fiscal }}\",\n      \"observacao\": \"Conta importada automaticamente N8N - NF{{ $('Webhook').<REDACTED_JWT>.event.numero_documento_fiscal }}. Filial de Origem: SE.\",\n      \"numero_parcela\": \"{{ $('Webhook').<REDACTED_JWT>.event.numero_parcela }}\",\n      \"chave_nfe\": \"{{ $('Webhook').<REDACTED_JWT>.event.chave_nfe }}\",\n      \"id_origem\": \"{{ $('Webhook').<REDACTED_JWT>.event.id_origem }}\",\n      \"importado_api\": \"S\",\n      \"numero_pedido\": \"{{ $('Webhook').<REDACTED_JWT>.event.numero_pedido }}\",\n      \"codigo_tipo_documento\": \"{{ $('Webhook').<REDACTED_JWT>.event.codigo_tipo_documento }}\",\n      \"numero_documento\": \"{{ $('Webhook').<REDACTED_JWT>.event.numero_documento }}\"\n      \"numero_pedido\": \"{{ $('Webhook').<REDACTED_JWT>.event.numero_pedido }}\",\n      \"codigo_vendedor\": \"{{ $('Lista de Vendedores SE').<REDACTED_JWT> }}\",\n    }\n  ]\n}",
+        "options": {}
+      },
+      "id": "3a893f8e-c2e7-4301-b16f-912a55ea0bff",
+      "name": "Envia pro Omie SE -> PR",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1312,
+        736
+      ],
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "jsCode": "return items.map(item => {\n  const evt = <REDACTED_JWT> && <REDACTED_JWT>.event;\n  if (!evt) {\n    return item;\n  }\n\n  const camposData = [\n    'data_emissao',\n    'data_previsao',\n    'data_registro',\n    'data_vencimento'\n  ];\n\n  camposData.forEach(campo => {\n    const valorISO = evt[campo];\n    if (valorISO) {\n      const d = new Date(valorISO);\n      const dd = String(d.getDate()).padStart(2, '0');\n      const mm = String(d.getMonth() + 1).padStart(2, '0');\n      const yyyy = d.getFullYear();\n      evt[campo] = `${dd}/${mm}/${yyyy}`;\n    }\n  });\n\n  const mapeamentoCategorias = {\n    \"<REDACTED_JWT>\": \"<REDACTED_JWT>\", // Clientes - Venda de Mercadoria\n    \"<REDACTED_JWT>\": \"<REDACTED_JWT>\", // Clientes - Serviços Prestados\n    \"<REDACTED_JWT>\": \"<REDACTED_JWT>\" // Clientes - Revenda de Mercadoria\n  };\n\n  const codigoOrigem = evt.codigo_categoria;\n  const codigoDestino = mapeamentoCategorias[codigoOrigem] || codigoOrigem;\n\n  <REDACTED_JWT> = codigoDestino;\n\n  const mapeamentoBancos = {\n\n    \n\n  };\n  \n  const idBancoOrigem = evt.id_conta_corrente;\n  const idBancoDestino = mapeamentoBancos[idBancoOrigem] || idBancoOrigem;\n  \n  <REDACTED_JWT> = idBancoDestino;\n\nconst mapeamentoVendedores = {\n};\nconst idVendedorOrigem = evt.codigo_vendedor; \nconst idVendedorDestino = mapeamentoVendedores[idVendedorOrigem] || idVendedorOrigem;\n<REDACTED_JWT> = idVendedorDestino;\n\n  return item;\n});"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        416,
+        928
+      ],
+      "id": "b9e9d45d-44e2-41af-879a-35d1946ef829",
+      "name": "Tradutor e Preparador de Dados MG"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://<REDACTED_JWT>.br/api/v1/financas/contareceber/",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"call\": \"IncluirContaReceber\",\n  \"app_key\": \"<REDACTED_APP_KEY>\",\n  \"app_secret\": \"<REDACTED_APP_SECRET>\",\n  \"param\": [\n    {\n      \"codigo_lancamento_integracao\": \"{{ (() => {\n        let s = '';\n        for (let i = 0; i < 60; i++) {\n          s += Math.floor(Math.random() * 10);\n        }\n        return s;\n      })() }}\",\n      \"codigo_cliente_fornecedor\": \"{{ $json.codigo_cliente_pr }}\",\n      \"data_vencimento\": \"{{ $('Tradutor e Preparador de Dados SP').<REDACTED_JWT>.event.data_vencimento }}\",\n      \"valor_documento\": \"{{ $('Webhook').<REDACTED_JWT>.event.valor_documento }}\",\n      \"data_previsao\": \"{{ $('Tradutor e Preparador de Dados SP').<REDACTED_JWT>.event.data_previsao }}\",\n      \"id_conta_corrente\": \"{{ $('Lista de Bancos MG').<REDACTED_JWT> }}\",\n      \"codigo_categoria\": \"{{ $('Tradutor e Preparador de Dados SP').<REDACTED_JWT> }}\",\n      \"data_emissao\": \"{{ $('Tradutor e Preparador de Dados SP').<REDACTED_JWT>.event.data_emissao }}\",\n      \"numero_documento_fiscal\": \"{{ $('Webhook').<REDACTED_JWT>.event.numero_documento_fiscal }}\",\n      \"observacao\": \"Conta importada automaticamente N8N - NF{{ $('Webhook').<REDACTED_JWT>.event.numero_documento_fiscal }}. Filial de Origem: MG.\",\n      \"numero_parcela\": \"{{ $('Webhook').<REDACTED_JWT>.event.numero_parcela }}\",\n      \"chave_nfe\": \"{{ $('Webhook').<REDACTED_JWT>.event.chave_nfe }}\",\n      \"id_origem\": \"{{ $('Webhook').<REDACTED_JWT>.event.id_origem }}\",\n      \"importado_api\": \"S\",\n      \"numero_pedido\": \"{{ $('Webhook').<REDACTED_JWT>.event.numero_pedido }}\",\n      \"codigo_tipo_documento\": \"{{ $('Webhook').<REDACTED_JWT>.event.codigo_tipo_documento }}\",\n      \"numero_documento\": \"{{ $('Webhook').<REDACTED_JWT>.event.numero_documento }}\"\n      \"numero_pedido\": \"{{ $('Webhook').<REDACTED_JWT>.event.numero_pedido }}\",\n      \"codigo_vendedor\": \"{{ $('Lista de Vendedores MG').<REDACTED_JWT> }}\",\n    }\n  ]\n}",
+        "options": {}
+      },
+      "id": "4afe7233-730b-49f1-90ec-91bf25aef6b2",
+      "name": "Envia pro Omie MG -> PR",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1312,
+        928
+      ],
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "jsCode": "return items.map(item => {\n  const evt = <REDACTED_JWT> && <REDACTED_JWT>.event;\n  if (!evt) {\n    return item;\n  }\n\n  const camposData = [\n    'data_emissao',\n    'data_previsao',\n    'data_registro',\n    'data_vencimento'\n  ];\n\n  camposData.forEach(campo => {\n    const valorISO = evt[campo];\n    if (valorISO) {\n      const d = new Date(valorISO);\n      const dd = String(d.getDate()).padStart(2, '0');\n      const mm = String(d.getMonth() + 1).padStart(2, '0');\n      const yyyy = d.getFullYear();\n      evt[campo] = `${dd}/${mm}/${yyyy}`;\n    }\n  });\n\n  const mapeamentoCategorias = {\n    \"<REDACTED_JWT>\": \"<REDACTED_JWT>\", // Clientes - Venda de Mercadoria\n    \"<REDACTED_JWT>\": \"<REDACTED_JWT>\", // Clientes - Serviços Prestados\n    \"<REDACTED_JWT>\": \"<REDACTED_JWT>\" // Clientes - Revenda de Mercadoria\n  };\n\n  const codigoOrigem = evt.codigo_categoria;\n  const codigoDestino = mapeamentoCategorias[codigoOrigem] || codigoOrigem;\n\n  <REDACTED_JWT> = codigoDestino;\n\n  const mapeamentoBancos = {\n    \n\n  };\n  \n  const idBancoOrigem = evt.id_conta_corrente;\n  const idBancoDestino = mapeamentoBancos[idBancoOrigem] || idBancoOrigem;\n  \n  <REDACTED_JWT> = idBancoDestino;\n\nconst mapeamentoVendedores = {\n\n};\nconst idVendedorOrigem = evt.codigo_vendedor; \nconst idVendedorDestino = mapeamentoVendedores[idVendedorOrigem] || idVendedorOrigem;\n<REDACTED_JWT> = idVendedorDestino;\n\n  return item;\n});"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        416,
+        1120
+      ],
+      "id": "2f6d1800-85dc-4a3f-b216-1bb24c4b656c",
+      "name": "Tradutor e Preparador de Dados PA"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://<REDACTED_JWT>.br/api/v1/financas/contareceber/",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"call\": \"IncluirContaReceber\",\n  \"app_key\": \"<REDACTED_APP_KEY>\",\n  \"app_secret\": \"<REDACTED_APP_SECRET>\",\n  \"param\": [\n    {\n      \"codigo_lancamento_integracao\": \"{{ (() => {\n        let s = '';\n        for (let i = 0; i < 60; i++) {\n          s += Math.floor(Math.random() * 10);\n        }\n        return s;\n      })() }}\",\n      \"codigo_cliente_fornecedor\": \"{{ $json.codigo_cliente_pr }}\",\n      \"data_vencimento\": \"{{ $('Tradutor e Preparador de Dados SP').<REDACTED_JWT>.event.data_vencimento }}\",\n      \"valor_documento\": \"{{ $('Webhook').<REDACTED_JWT>.event.valor_documento }}\",\n      \"data_previsao\": \"{{ $('Tradutor e Preparador de Dados SP').<REDACTED_JWT>.event.data_previsao }}\",\n      \"id_conta_corrente\": \"{{ $('Lista de Bancos PA').<REDACTED_JWT> }}\",\n      \"codigo_categoria\": \"{{ $('Tradutor e Preparador de Dados SP').<REDACTED_JWT> }}\",\n      \"data_emissao\": \"{{ $('Tradutor e Preparador de Dados SP').<REDACTED_JWT>.event.data_emissao }}\",\n      \"numero_documento_fiscal\": \"{{ $('Webhook').<REDACTED_JWT>.event.numero_documento_fiscal }}\",\n      \"observacao\": \"Conta importada automaticamente N8N - NF{{ $('Webhook').<REDACTED_JWT>.event.numero_documento_fiscal }}. Filial de Origem: PA.\",\n      \"numero_parcela\": \"{{ $('Webhook').<REDACTED_JWT>.event.numero_parcela }}\",\n      \"chave_nfe\": \"{{ $('Webhook').<REDACTED_JWT>.event.chave_nfe }}\",\n      \"id_origem\": \"{{ $('Webhook').<REDACTED_JWT>.event.id_origem }}\",\n      \"importado_api\": \"S\",\n      \"numero_pedido\": \"{{ $('Webhook').<REDACTED_JWT>.event.numero_pedido }}\",\n      \"codigo_tipo_documento\": \"{{ $('Webhook').<REDACTED_JWT>.event.codigo_tipo_documento }}\",\n      \"numero_documento\": \"{{ $('Webhook').<REDACTED_JWT>.event.numero_documento }}\"\n      \"numero_pedido\": \"{{ $('Webhook').<REDACTED_JWT>.event.numero_pedido }}\",\n      \"codigo_vendedor\": \"{{ $('Lista de Vendedores PA').<REDACTED_JWT> }}\",\n    }\n  ]\n}",
+        "options": {}
+      },
+      "id": "67e99bb7-a489-4e07-ae73-b93d4e7c9a67",
+      "name": "Envia pro Omie PA -> PR",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1312,
+        1120
+      ],
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "tableId": "omieClientes",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "codigo_cliente_es",
+              "keyValue": "={{ $('Webhook').<REDACTED_JWT>.event.codigo_cliente_fornecedor }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        1088,
+        544
+      ],
+      "id": "230cb9ba-4033-4201-be29-a7d677f89ba3",
+      "name": "Pega a Lista de Clientes ES"
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "tableId": "omieClientes",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "codigo_cliente_se",
+              "keyValue": "={{ $('Webhook').<REDACTED_JWT>.event.codigo_cliente_fornecedor }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        1088,
+        736
+      ],
+      "id": "d86979a4-7dba-4d01-912a-0c1c3390afbe",
+      "name": "Pega a Lista de Clientes SE"
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "tableId": "omieClientes",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "codigo_cliente_mg",
+              "keyValue": "={{ $('Webhook').<REDACTED_JWT>.event.codigo_cliente_fornecedor }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        1088,
+        928
+      ],
+      "id": "cb13cea1-4637-4d46-8d4a-aa715156a4be",
+      "name": "Pega a Lista de Clientes MG"
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "tableId": "omieClientes",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "codigo_cliente_pa",
+              "keyValue": "={{ $('Webhook').<REDACTED_JWT>.event.codigo_cliente_fornecedor }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        1088,
+        1120
+      ],
+      "id": "76ebdae2-8603-4d36-bce9-901d465bc460",
+      "name": "Pega a Lista de Clientes PA"
+    },
+    {
+      "parameters": {
+        "tableId": "omieContasAreceber",
+        "fieldsUi": {
+          "fieldValues": [
+            {
+              "fieldId": "cod_lan_es",
+              "fieldValue": "={{ $('Tradutor e Preparador de Dados ES').<REDACTED_JWT>.event.codigo_lancamento_omie }}"
+            },
+            {
+              "fieldId": "cod_lan_pr",
+              "fieldValue": "={{ $json.codigo_lancamento_omie }}"
+            },
+            {
+              "fieldId": "cod_lan_inte_pr",
+              "fieldValue": "={{ $json.codigo_lancamento_integracao }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        1536,
+        544
+      ],
+      "id": "320e5e48-8a59-467a-9a66-1cb85e36d05d",
+      "name": "Cria Coluna com o Pedido ES"
+    },
+    {
+      "parameters": {
+        "tableId": "omieContasAreceber",
+        "fieldsUi": {
+          "fieldValues": [
+            {
+              "fieldId": "cod_lan_se",
+              "fieldValue": "={{ $('Tradutor e Preparador de Dados SE').<REDACTED_JWT>.event.codigo_lancamento_omie }}"
+            },
+            {
+              "fieldId": "cod_lan_pr",
+              "fieldValue": "={{ $json.codigo_lancamento_omie }}"
+            },
+            {
+              "fieldId": "cod_lan_inte_pr",
+              "fieldValue": "={{ $json.codigo_lancamento_integracao }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        1536,
+        736
+      ],
+      "id": "645b6e62-0c62-4b04-86b5-27eaf0bbfed4",
+      "name": "Cria Coluna com o Pedido SE"
+    },
+    {
+      "parameters": {
+        "tableId": "omieContasAreceber",
+        "fieldsUi": {
+          "fieldValues": [
+            {
+              "fieldId": "cod_lan_mg",
+              "fieldValue": "={{ $('Tradutor e Preparador de Dados MG').<REDACTED_JWT>.event.codigo_lancamento_omie }}"
+            },
+            {
+              "fieldId": "cod_lan_pr",
+              "fieldValue": "={{ $json.codigo_lancamento_omie }}"
+            },
+            {
+              "fieldId": "cod_lan_inte_pr",
+              "fieldValue": "={{ $json.codigo_lancamento_integracao }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        1536,
+        928
+      ],
+      "id": "cae29b01-8c96-406e-879d-f11cd5470a99",
+      "name": "Cria Coluna com o Pedido MG"
+    },
+    {
+      "parameters": {
+        "tableId": "omieContasAreceber",
+        "fieldsUi": {
+          "fieldValues": [
+            {
+              "fieldId": "cod_lan_pa",
+              "fieldValue": "={{ $('Tradutor e Preparador de Dados PA').<REDACTED_JWT>.event.codigo_lancamento_omie }}"
+            },
+            {
+              "fieldId": "cod_lan_pr",
+              "fieldValue": "={{ $json.codigo_lancamento_omie }}"
+            },
+            {
+              "fieldId": "cod_lan_inte_pr",
+              "fieldValue": "={{ $json.codigo_lancamento_integracao }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        1536,
+        1120
+      ],
+      "id": "31b988cf-9781-4b18-9804-550049135dfe",
+      "name": "Cria Coluna com o Pedido PA"
+    },
+    {
+      "parameters": {
+        "jsCode": "return items.map(item => {\n  const evt = <REDACTED_JWT> && <REDACTED_JWT>.event;\n  if (!evt) {\n    return item;\n  }\n\n  const camposData = [\n    'data_emissao',\n    'data_previsao',\n    'data_registro',\n    'data_vencimento'\n  ];\n\n  camposData.forEach(campo => {\n    const valorISO = evt[campo];\n    if (valorISO) {\n      const d = new Date(valorISO);\n      const dd = String(d.getDate()).padStart(2, '0');\n      const mm = String(d.getMonth() + 1).padStart(2, '0');\n      const yyyy = d.getFullYear();\n      evt[campo] = `${dd}/${mm}/${yyyy}`;\n    }\n  });\n\n  const mapeamentoCategorias = {\n    \"<REDACTED_JWT>\": \"<REDACTED_JWT>\", // Clientes - Venda de Mercadoria\n    \"<REDACTED_JWT>\": \"<REDACTED_JWT>\", // Clientes - Serviços Prestados\n    \"<REDACTED_JWT>\": \"<REDACTED_JWT>\" // Clientes - Revenda de Mercadoria\n  };\n\n  const codigoOrigem = evt.codigo_categoria;\n  const codigoDestino = mapeamentoCategorias[codigoOrigem] || codigoOrigem;\n\n  <REDACTED_JWT> = codigoDestino;\n\n  const mapeamentoBancos = {\n\n  };\n  \n  const idBancoOrigem = evt.id_conta_corrente;\n  const idBancoDestino = mapeamentoBancos[idBancoOrigem] || idBancoOrigem;\n  \n  <REDACTED_JWT> = idBancoDestino;\n\nconst mapeamentoVendedores = {\n\n};\nconst idVendedorOrigem = evt.codigo_vendedor; \nconst idVendedorDestino = mapeamentoVendedores[idVendedorOrigem] || idVendedorOrigem;\n<REDACTED_JWT> = idVendedorDestino;\n\n  return item;\n});"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        416,
+        1312
+      ],
+      "id": "c9818dea-1382-49a0-af8c-f43ab07fb3a9",
+      "name": "Tradutor e Preparador de Dados RJ"
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "tableId": "omieClientes",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "codigo_cliente_rj",
+              "keyValue": "={{ $('Webhook').<REDACTED_JWT>.event.codigo_cliente_fornecedor }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        1088,
+        1312
+      ],
+      "id": "17e96e83-13b5-4b2f-bb6e-790fdfe1d155",
+      "name": "Pega a Lista de Clientes RJ"
+    },
+    {
+      "parameters": {
+        "tableId": "omieContasAreceber",
+        "fieldsUi": {
+          "fieldValues": [
+            {
+              "fieldId": "cod_lan_rj",
+              "fieldValue": "={{ $('Tradutor e Preparador de Dados RJ').<REDACTED_JWT>.event.codigo_lancamento_omie }}"
+            },
+            {
+              "fieldId": "cod_lan_pr",
+              "fieldValue": "={{ $json.codigo_lancamento_omie }}"
+            },
+            {
+              "fieldId": "cod_lan_inte_pr",
+              "fieldValue": "={{ $json.codigo_lancamento_integracao }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        1536,
+        1312
+      ],
+      "id": "66a44ab5-376b-4df6-a668-279fbc97627f",
+      "name": "Cria Coluna com o Pedido RJ"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://<REDACTED_JWT>.br/api/v1/financas/contareceber/",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"call\": \"IncluirContaReceber\",\n  \"app_key\": \"<REDACTED_APP_KEY>\",\n  \"app_secret\": \"<REDACTED_APP_SECRET>\",\n  \"param\": [\n    {\n      \"codigo_lancamento_integracao\": \"{{ (() => {\n        let s = '';\n        for (let i = 0; i < 60; i++) {\n          s += Math.floor(Math.random() * 10);\n        }\n        return s;\n      })() }}\",\n      \"codigo_cliente_fornecedor\": \"{{ $json.codigo_cliente_pr }}\",\n      \"data_vencimento\": \"{{ $('Tradutor e Preparador de Dados SP').<REDACTED_JWT>.event.data_vencimento }}\",\n      \"valor_documento\": \"{{ $('Webhook').<REDACTED_JWT>.event.valor_documento }}\",\n      \"data_previsao\": \"{{ $('Tradutor e Preparador de Dados SP').<REDACTED_JWT>.event.data_previsao }}\",\n      \"id_conta_corrente\": \"{{ $('Lista de Bancos RJ').<REDACTED_JWT> }}\",\n      \"codigo_categoria\": \"{{ $('Tradutor e Preparador de Dados SP').<REDACTED_JWT> }}\",\n      \"data_emissao\": \"{{ $('Tradutor e Preparador de Dados SP').<REDACTED_JWT>.event.data_emissao }}\",\n      \"numero_documento_fiscal\": \"{{ $('Webhook').<REDACTED_JWT>.event.numero_documento_fiscal }}\",\n      \"observacao\": \"Conta importada automaticamente N8N - NF{{ $('Webhook').<REDACTED_JWT>.event.numero_documento_fiscal }}. Filial de Origem: RJ.\",\n      \"numero_parcela\": \"{{ $('Webhook').<REDACTED_JWT>.event.numero_parcela }}\",\n      \"chave_nfe\": \"{{ $('Webhook').<REDACTED_JWT>.event.chave_nfe }}\",\n      \"id_origem\": \"{{ $('Webhook').<REDACTED_JWT>.event.id_origem }}\",\n      \"importado_api\": \"S\",\n      \"numero_pedido\": \"{{ $('Webhook').<REDACTED_JWT>.event.numero_pedido }}\",\n      \"codigo_tipo_documento\": \"{{ $('Webhook').<REDACTED_JWT>.event.codigo_tipo_documento }}\",\n      \"numero_documento\": \"{{ $('Webhook').<REDACTED_JWT>.event.numero_documento }}\"\n      \"numero_pedido\": \"{{ $('Webhook').<REDACTED_JWT>.event.numero_pedido }}\",\n      \"codigo_vendedor\": \"{{ $('Lista de Vendedores RJ').<REDACTED_JWT> }}\",\n    }\n  ]\n}",
+        "options": {}
+      },
+      "id": "fd599c15-dc44-4a57-82c6-2291d133ac36",
+      "name": "Envia pro Omie RJ -> PR",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1312,
+        1312
+      ],
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "jsCode": "return items.map(item => {\n  const evt = <REDACTED_JWT> && <REDACTED_JWT>.event;\n  if (!evt) {\n    return item;\n  }\n\n  const camposData = [\n    'data_emissao',\n    'data_previsao',\n    'data_registro',\n    'data_vencimento'\n  ];\n\n  camposData.forEach(campo => {\n    const valorISO = evt[campo];\n    if (valorISO) {\n      const d = new Date(valorISO);\n      const dd = String(d.getDate()).padStart(2, '0');\n      const mm = String(d.getMonth() + 1).padStart(2, '0');\n      const yyyy = d.getFullYear();\n      evt[campo] = `${dd}/${mm}/${yyyy}`;\n    }\n  });\n\n  const mapeamentoCategorias = {\n    \"<REDACTED_JWT>\": \"<REDACTED_JWT>\", // Clientes - Venda de Mercadoria\n    \"<REDACTED_JWT>\": \"<REDACTED_JWT>\", // Clientes - Serviços Prestados\n    \"<REDACTED_JWT>\": \"<REDACTED_JWT>\" // Clientes - Revenda de Mercadoria\n  };\n\n  const codigoOrigem = evt.codigo_categoria;\n  const codigoDestino = mapeamentoCategorias[codigoOrigem] || codigoOrigem;\n\n  <REDACTED_JWT> = codigoDestino;\n\n  const mapeamentoBancos = {\n    \n\n  };\n  \n  const idBancoOrigem = evt.id_conta_corrente;\n  const idBancoDestino = mapeamentoBancos[idBancoOrigem] || idBancoOrigem;\n  \n  <REDACTED_JWT> = idBancoDestino;\n\nconst mapeamentoVendedores = {\n\n};\nconst idVendedorOrigem = evt.codigo_vendedor; \nconst idVendedorDestino = mapeamentoVendedores[idVendedorOrigem] || idVendedorOrigem;\n<REDACTED_JWT> = idVendedorDestino;\n\n  return item;\n});"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        416,
+        1504
+      ],
+      "id": "377609e4-8575-4960-9ea3-c1cf4731dbd6",
+      "name": "Tradutor e Preparador de Dados RS"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://<REDACTED_JWT>.br/api/v1/financas/contareceber/",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"call\": \"IncluirContaReceber\",\n  \"app_key\": \"<REDACTED_APP_KEY>\",\n  \"app_secret\": \"<REDACTED_APP_SECRET>\",\n  \"param\": [\n    {\n      \"codigo_lancamento_integracao\": \"{{ (() => {\n        let s = '';\n        for (let i = 0; i < 60; i++) {\n          s += Math.floor(Math.random() * 10);\n        }\n        return s;\n      })() }}\",\n      \"codigo_cliente_fornecedor\": \"{{ $json.codigo_cliente_pr }}\",\n      \"data_vencimento\": \"{{ $('Tradutor e Preparador de Dados SP').<REDACTED_JWT>.event.data_vencimento }}\",\n      \"valor_documento\": \"{{ $('Webhook').<REDACTED_JWT>.event.valor_documento }}\",\n      \"data_previsao\": \"{{ $('Tradutor e Preparador de Dados SP').<REDACTED_JWT>.event.data_previsao }}\",\n      \"id_conta_corrente\": \"{{ $('Lista de Bancos RS').<REDACTED_JWT> }}\",\n      \"codigo_categoria\": \"{{ $('Tradutor e Preparador de Dados SP').<REDACTED_JWT> }}\",\n      \"data_emissao\": \"{{ $('Tradutor e Preparador de Dados SP').<REDACTED_JWT>.event.data_emissao }}\",\n      \"numero_documento_fiscal\": \"{{ $('Webhook').<REDACTED_JWT>.event.numero_documento_fiscal }}\",\n      \"observacao\": \"Conta importada automaticamente N8N - NF{{ $('Webhook').<REDACTED_JWT>.event.numero_documento_fiscal }}. Filial de Origem: RS.\",\n      \"numero_parcela\": \"{{ $('Webhook').<REDACTED_JWT>.event.numero_parcela }}\",\n      \"chave_nfe\": \"{{ $('Webhook').<REDACTED_JWT>.event.chave_nfe }}\",\n      \"id_origem\": \"{{ $('Webhook').<REDACTED_JWT>.event.id_origem }}\",\n      \"importado_api\": \"S\",\n      \"numero_pedido\": \"{{ $('Webhook').<REDACTED_JWT>.event.numero_pedido }}\",\n      \"codigo_tipo_documento\": \"{{ $('Webhook').<REDACTED_JWT>.event.codigo_tipo_documento }}\",\n      \"numero_documento\": \"{{ $('Webhook').<REDACTED_JWT>.event.numero_documento }}\"\n      \"numero_pedido\": \"{{ $('Webhook').<REDACTED_JWT>.event.numero_pedido }}\",\n      \"codigo_vendedor\": \"{{ $('Lista de Vendedores RS').<REDACTED_JWT> }}\",\n    }\n  ]\n}",
+        "options": {}
+      },
+      "id": "7b27628b-39f2-4c88-bb0c-2ab4cd489260",
+      "name": "Envia pro Omie RS -> PR",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1312,
+        1504
+      ],
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "tableId": "omieContasAreceber",
+        "fieldsUi": {
+          "fieldValues": [
+            {
+              "fieldId": "cod_lan_rs",
+              "fieldValue": "={{ $('Tradutor e Preparador de Dados RS').<REDACTED_JWT>.event.codigo_lancamento_omie }}"
+            },
+            {
+              "fieldId": "cod_lan_pr",
+              "fieldValue": "={{ $json.codigo_lancamento_omie }}"
+            },
+            {
+              "fieldId": "cod_lan_inte_pr",
+              "fieldValue": "={{ $json.codigo_lancamento_integracao }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        1536,
+        1504
+      ],
+      "id": "87ea2d67-d3e9-4e82-a48f-55b77ba1cb24",
+      "name": "Cria Coluna com o Pedido RS"
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "tableId": "omieClientes",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "codigo_cliente_rs",
+              "keyValue": "={{ $('Webhook').<REDACTED_JWT>.event.codigo_cliente_fornecedor }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        1088,
+        1504
+      ],
+      "id": "be670d57-7ff2-440e-9a43-af4324209e73",
+      "name": "Pega a Lista de Clientes RS"
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "tableId": "omie_sellers",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "sc",
+              "keyValue": "={{ $('Webhook').<REDACTED_JWT>.event.codigo_vendedor }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        864,
+        160
+      ],
+      "id": "3ae7b47f-9ead-4700-bf31-fa1711fa28c6",
+      "name": "Lista de Vendedores SC",
+      "alwaysOutputData": true,
+      "credentials": {
+        "supabaseApi": {
+          "id": "Mjlwj1Q3EnxkKPu3",
+          "name": "Teste 1-1"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "tableId": "omie_ccid",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "sp",
+              "keyValue": "={{ $('Webhook').<REDACTED_JWT>.event.id_conta_corrente }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        640,
+        352
+      ],
+      "id": "b37b39f4-3444-4b71-8d20-0e9714835f65",
+      "name": "Lista de Bancos SP",
+      "alwaysOutputData": true,
+      "credentials": {
+        "supabaseApi": {
+          "id": "Mjlwj1Q3EnxkKPu3",
+          "name": "Teste 1-1"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "tableId": "omie_sellers",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "sp",
+              "keyValue": "={{ $('Webhook').<REDACTED_JWT>.event.codigo_vendedor }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        864,
+        352
+      ],
+      "id": "db65b86d-9ae3-4aba-82a4-d3e59f67749f",
+      "name": "Lista de Vendedores SP",
+      "alwaysOutputData": true,
+      "credentials": {
+        "supabaseApi": {
+          "id": "Mjlwj1Q3EnxkKPu3",
+          "name": "Teste 1-1"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "tableId": "omie_ccid",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "es",
+              "keyValue": "={{ $('Webhook').<REDACTED_JWT>.event.id_conta_corrente }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        640,
+        544
+      ],
+      "id": "9494f18a-c87f-4ab0-91d7-9bcc30cab754",
+      "name": "Lista de Bancos ES",
+      "alwaysOutputData": true,
+      "credentials": {
+        "supabaseApi": {
+          "id": "Mjlwj1Q3EnxkKPu3",
+          "name": "Teste 1-1"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "tableId": "omie_sellers",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "es",
+              "keyValue": "={{ $('Webhook').<REDACTED_JWT>.event.codigo_vendedor }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        864,
+        544
+      ],
+      "id": "2f26155c-ebb9-4773-89a1-05ebfcd6e278",
+      "name": "Lista de Vendedores ES",
+      "alwaysOutputData": true
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "tableId": "omie_ccid",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "se",
+              "keyValue": "={{ $('Webhook').<REDACTED_JWT>.event.id_conta_corrente }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        640,
+        736
+      ],
+      "id": "6bb44113-8e3e-4339-8bed-8314087ea2ef",
+      "name": "Lista de Bancos SE",
+      "alwaysOutputData": true,
+      "credentials": {
+        "supabaseApi": {
+          "id": "Mjlwj1Q3EnxkKPu3",
+          "name": "Teste 1-1"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "tableId": "omie_sellers",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "se",
+              "keyValue": "={{ $('Webhook').<REDACTED_JWT>.event.codigo_vendedor }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        864,
+        736
+      ],
+      "id": "1fbe657a-fac0-4019-a856-b27212c501f3",
+      "name": "Lista de Vendedores SE",
+      "alwaysOutputData": true
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "tableId": "omie_ccid",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "mg",
+              "keyValue": "={{ $('Webhook').<REDACTED_JWT>.event.id_conta_corrente }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        640,
+        928
+      ],
+      "id": "c610eba3-6eef-4adf-8ccd-c97360d233f7",
+      "name": "Lista de Bancos MG",
+      "alwaysOutputData": true,
+      "credentials": {
+        "supabaseApi": {
+          "id": "Mjlwj1Q3EnxkKPu3",
+          "name": "Teste 1-1"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "tableId": "omie_sellers",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "mg",
+              "keyValue": "={{ $('Webhook').<REDACTED_JWT>.event.codigo_vendedor }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        864,
+        928
+      ],
+      "id": "977898a6-de33-4695-8875-91b3cfbe4d5d",
+      "name": "Lista de Vendedores MG",
+      "alwaysOutputData": true
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "tableId": "omie_ccid",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "pa",
+              "keyValue": "={{ $('Webhook').<REDACTED_JWT>.event.id_conta_corrente }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        640,
+        1120
+      ],
+      "id": "4adb4822-bc2f-4fb3-ad49-7fe05ad50985",
+      "name": "Lista de Bancos PA",
+      "alwaysOutputData": true,
+      "credentials": {
+        "supabaseApi": {
+          "id": "Mjlwj1Q3EnxkKPu3",
+          "name": "Teste 1-1"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "tableId": "omie_sellers",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "pa",
+              "keyValue": "={{ $('Webhook').<REDACTED_JWT>.event.codigo_vendedor }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        864,
+        1120
+      ],
+      "id": "36f31f47-00fe-40c7-9f8d-7c1007e4256a",
+      "name": "Lista de Vendedores PA",
+      "alwaysOutputData": true
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "tableId": "omie_ccid",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "rj",
+              "keyValue": "={{ $('Webhook').<REDACTED_JWT>.event.id_conta_corrente }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        640,
+        1312
+      ],
+      "id": "7905266e-a4a6-4f2e-92a1-75236228a6e7",
+      "name": "Lista de Bancos RJ",
+      "alwaysOutputData": true,
+      "credentials": {
+        "supabaseApi": {
+          "id": "Mjlwj1Q3EnxkKPu3",
+          "name": "Teste 1-1"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "tableId": "omie_sellers",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "rj",
+              "keyValue": "={{ $('Webhook').<REDACTED_JWT>.event.codigo_vendedor }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        864,
+        1312
+      ],
+      "id": "04b33b39-640a-41ab-9610-bac32f7eca29",
+      "name": "Lista de Vendedores RJ",
+      "alwaysOutputData": true
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "tableId": "omie_ccid",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "rs",
+              "keyValue": "={{ $('Webhook').<REDACTED_JWT>.event.id_conta_corrente }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        640,
+        1504
+      ],
+      "id": "82dbd995-d925-45fb-9e16-4330443d6afa",
+      "name": "Lista de Bancos RS",
+      "alwaysOutputData": true,
+      "credentials": {
+        "supabaseApi": {
+          "id": "Mjlwj1Q3EnxkKPu3",
+          "name": "Teste 1-1"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "tableId": "omie_sellers",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "rs",
+              "keyValue": "={{ $('Webhook').<REDACTED_JWT>.event.codigo_vendedor }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        864,
+        1504
+      ],
+      "id": "63411aaa-b508-4e5e-acf2-c997156dc7a1",
+      "name": "Lista de Vendedores RS",
+      "alwaysOutputData": true
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "tableId": "omie_ccid",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "sc",
+              "keyValue": "={{ $('Webhook').<REDACTED_JWT>.event.id_conta_corrente }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        640,
+        160
+      ],
+      "id": "f5bddb10-c1c7-4b17-9b85-34f42867aeca",
+      "name": "Lista de Bancos SC",
+      "alwaysOutputData": true,
+      "credentials": {
+        "supabaseApi": {
+          "id": "Mjlwj1Q3EnxkKPu3",
+          "name": "Teste 1-1"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "f499730d-a2be-4b53-a412-1ee9c3ba1e2b",
+              "name": "cod_lan_es",
+              "value": "={{ $json.cod_lan_es || 0 }}",
+              "type": "number"
+            },
+            {
+              "id": "b4237448-24de-450e-848a-2e7d14b60e4b",
+              "name": "cod_lan_sc",
+              "value": "={{ $json.cod_lan_sc || 0}}",
+              "type": "number"
+            },
+            {
+              "id": "fffb7260-9117-4382-8896-6c4aa1c3f421",
+              "name": "cod_lan_sp",
+              "value": "={{ $json.cod_lan_sp || 0}}",
+              "type": "number"
+            },
+            {
+              "id": "b8de471a-9c42-4085-8a89-fee195bdbb95",
+              "name": "cod_lan_se",
+              "value": "={{ $json.cod_lan_se || 0}}",
+              "type": "number"
+            },
+            {
+              "id": "444798ce-e70a-44b6-9bcd-78cbad31c4c5",
+              "name": "=cod_lan_mg",
+              "value": "={{ $json.cod_lan_mg || 0}}",
+              "type": "number"
+            },
+            {
+              "id": "8094805c-ac6d-42ac-9e27-2d47420fcf00",
+              "name": "cod_lan_pa",
+              "value": "={{ $json.cod_lan_pa || 0}}",
+              "type": "number"
+            },
+            {
+              "id": "b88c325e-0d50-4a76-9ac8-8878037e8161",
+              "name": "cod_lan_rj",
+              "value": "={{ $json.cod_lan_rj || 0}}",
+              "type": "number"
+            },
+            {
+              "id": "0dd16d43-6687-4bab-8eaf-3fb6d36f0f6d",
+              "name": "cod_lan_rs",
+              "value": "={{ $json.cod_lan_rs || 0}}",
+              "type": "number"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        416,
+        2368
+      ],
+      "id": "a569b9a0-6dd9-4965-8206-751c04b28196",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "tableId": "omieContasAreceber",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "cod_lan_pr",
+              "keyValue": "={{ $<REDACTED_JWT>[0].conta_a_receber[0].codigo_lancamento_omie }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        192,
+        2368
+      ],
+      "id": "584e2c96-0112-4805-8ed0-d1f7521688f9",
+      "name": "Get a row",
+      "credentials": {
+        "supabaseApi": {
+          "id": "Mjlwj1Q3EnxkKPu3",
+          "name": "Teste 1-1"
+        }
+      }
+    }
+  ],
+  "pinData": {
+    "Webhook": [
+      {
+        "json": {
+          "headers": {
+            "host": "n8n-cwb-main_webhook-prd.nwdrones.com.br",
+            "user-agent": "python-requests/2.32.4",
+            "content-length": "1290",
+            "accept": "*/*",
+            "accept-encoding": "gzip, br",
+            "cdn-loop": "cloudflare; loops=1; subreqs=1",
+            "cf-connecting-ip": "2a06:98c0:3600::103",
+            "cf-ew-via": "15",
+            "cf-ipcountry": "BR",
+            "cf-ray": "98e0e02a5215a414-GRU",
+            "cf-visitor": "{\"scheme\":\"https\"}",
+            "cf-warp-tag-id": "4b8012dd-56cd-4aa9-8707-87a1d84c5164",
+            "cf-worker": "rodrigo-lucchin.workers.dev",
+            "connection": "keep-alive",
+            "content-type": "application/json",
+            "x-forwarded-for": "2a06:98c0:3600::103",
+            "x-forwarded-proto": "https"
+          },
+          "params": {},
+          "query": {},
+          "body": {
+            "messageId": "39a0191b-3190-449f-94ff-6b9fa321fdfb",
+            "topic": "Financas.ContaReceber.Incluido",
+            "event": {
+              "baixa_bloqueada": "N",
+              "bloqueado": "N",
+              "boleto_gerado": "",
+              "chave_nfe": "",
+              "codigo_categoria": "1.01.01",
+              "codigo_cliente_fornecedor": 8705821150,
+              "codigo_cmc7_cheque": "",
+              "codigo_lancamento_integracao": "",
+              "codigo_lancamento_omie": 8713371449,
+              "codigo_projeto": 0,
+              "codigo_tipo_documento": "NFE",
+              "codigo_vendedor": 8597270153,
+              "data_emissao": "2025-10-13T00:00:00-03:00",
+              "data_previsao": "2025-10-14T00:00:00-03:00",
+              "data_registro": "2025-10-13T00:00:00-03:00",
+              "data_vencimento": "2025-10-14T00:00:00-03:00",
+              "id_conta_corrente": 8673335048,
+              "id_origem": "MANR",
+              "nsu": "",
+              "numero_documento": "",
+              "numero_documento_fiscal": "",
+              "numero_parcela": "001/001",
+              "numero_pedido": "",
+              "observacao": "",
+              "operacao": "",
+              "pix_gerado": "",
+              "retem_cofins": "",
+              "retem_csll": "",
+              "retem_inss": "",
+              "retem_ir": "",
+              "retem_iss": "",
+              "retem_pis": "",
+              "situacao": "A vencer",
+              "valor_cofins": 0,
+              "valor_csll": 0,
+              "valor_documento": 0.01,
+              "valor_inss": 0,
+              "valor_ir": 0,
+              "valor_iss": 0,
+              "valor_pis": 0
+            },
+            "author": {
+              "email": "<REDACTED_EMAIL>",
+              "name": "Rodrigo Lucchin",
+              "userId": 1270950
+            },
+            "appKey": "6045980954013",
+            "appHash": "nw-8nbrzk3t",
+            "origin": "omie-connect-2.0"
+          },
+          "webhookUrl": "https://n8n-cwb-main_webhook-prd.nwdrones.com.br/webhook/contasareceber",
+          "executionMode": "production"
+        }
+      }
+    ]
+  },
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Switch1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch": {
+      "main": [
+        [
+          {
+            "node": "Tradutor e Preparador de Dados SC",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Tradutor e Preparador de Dados SP",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Tradutor e Preparador de Dados ES",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Tradutor e Preparador de Dados SE",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Tradutor e Preparador de Dados MG",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Tradutor e Preparador de Dados PA",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Tradutor e Preparador de Dados RJ",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Tradutor e Preparador de Dados RS",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch1": {
+      "main": [
+        [
+          {
+            "node": "Switch",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [],
+        [
+          {
+            "node": "Get a row",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch2": {
+      "main": [
+        [
+          {
+            "node": "Deletar Omie ES",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Deletar Omie SC",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Deletar Omie SP",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Deletar Omie SE",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Deletar Omie MG",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Deletar Omie PA",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Deletar Omie RJ",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Deletar Omie RS",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Tradutor e Preparador de Dados SP": {
+      "main": [
+        [
+          {
+            "node": "Lista de Bancos SP",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Pega a Lista de Clientes SP": {
+      "main": [
+        [
+          {
+            "node": "Envia pro OMIE SP -> PR",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Envia pro OMIE SP -> PR": {
+      "main": [
+        [
+          {
+            "node": "Cria Coluna com o Pedido SP",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Tradutor e Preparador de Dados SC": {
+      "main": [
+        [
+          {
+            "node": "Lista de Bancos SC",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Pega de Lista de Clientes SC": {
+      "main": [
+        [
+          {
+            "node": "Envia pro Omie SC -> PR",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Envia pro Omie SC -> PR": {
+      "main": [
+        [
+          {
+            "node": "Cria Coluna com o Pedido SC",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Tradutor e Preparador de Dados ES": {
+      "main": [
+        [
+          {
+            "node": "Lista de Bancos ES",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Envia pro Omie ES -> PR": {
+      "main": [
+        [
+          {
+            "node": "Cria Coluna com o Pedido ES",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Tradutor e Preparador de Dados SE": {
+      "main": [
+        [
+          {
+            "node": "Lista de Bancos SE",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Envia pro Omie SE -> PR": {
+      "main": [
+        [
+          {
+            "node": "Cria Coluna com o Pedido SE",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Tradutor e Preparador de Dados MG": {
+      "main": [
+        [
+          {
+            "node": "Lista de Bancos MG",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Envia pro Omie MG -> PR": {
+      "main": [
+        [
+          {
+            "node": "Cria Coluna com o Pedido MG",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Tradutor e Preparador de Dados PA": {
+      "main": [
+        [
+          {
+            "node": "Lista de Bancos PA",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Envia pro Omie PA -> PR": {
+      "main": [
+        [
+          {
+            "node": "Cria Coluna com o Pedido PA",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Pega a Lista de Clientes ES": {
+      "main": [
+        [
+          {
+            "node": "Envia pro Omie ES -> PR",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Pega a Lista de Clientes SE": {
+      "main": [
+        [
+          {
+            "node": "Envia pro Omie SE -> PR",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Pega a Lista de Clientes MG": {
+      "main": [
+        [
+          {
+            "node": "Envia pro Omie MG -> PR",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Pega a Lista de Clientes PA": {
+      "main": [
+        [
+          {
+            "node": "Envia pro Omie PA -> PR",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Tradutor e Preparador de Dados RJ": {
+      "main": [
+        [
+          {
+            "node": "Lista de Bancos RJ",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Pega a Lista de Clientes RJ": {
+      "main": [
+        [
+          {
+            "node": "Envia pro Omie RJ -> PR",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Envia pro Omie RJ -> PR": {
+      "main": [
+        [
+          {
+            "node": "Cria Coluna com o Pedido RJ",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Tradutor e Preparador de Dados RS": {
+      "main": [
+        [
+          {
+            "node": "Lista de Bancos RS",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Envia pro Omie RS -> PR": {
+      "main": [
+        [
+          {
+            "node": "Cria Coluna com o Pedido RS",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Pega a Lista de Clientes RS": {
+      "main": [
+        [
+          {
+            "node": "Envia pro Omie RS -> PR",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Lista de Vendedores SC": {
+      "main": [
+        [
+          {
+            "node": "Pega de Lista de Clientes SC",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Lista de Bancos SP": {
+      "main": [
+        [
+          {
+            "node": "Lista de Vendedores SP",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Lista de Vendedores SP": {
+      "main": [
+        [
+          {
+            "node": "Pega a Lista de Clientes SP",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Lista de Bancos ES": {
+      "main": [
+        [
+          {
+            "node": "Lista de Vendedores ES",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Lista de Vendedores ES": {
+      "main": [
+        [
+          {
+            "node": "Pega a Lista de Clientes ES",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Lista de Bancos SE": {
+      "main": [
+        [
+          {
+            "node": "Lista de Vendedores SE",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Lista de Vendedores SE": {
+      "main": [
+        [
+          {
+            "node": "Pega a Lista de Clientes SE",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Lista de Bancos MG": {
+      "main": [
+        [
+          {
+            "node": "Lista de Vendedores MG",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Lista de Vendedores MG": {
+      "main": [
+        [
+          {
+            "node": "Pega a Lista de Clientes MG",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Lista de Bancos PA": {
+      "main": [
+        [
+          {
+            "node": "Lista de Vendedores PA",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Lista de Vendedores PA": {
+      "main": [
+        [
+          {
+            "node": "Pega a Lista de Clientes PA",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Lista de Bancos RJ": {
+      "main": [
+        [
+          {
+            "node": "Lista de Vendedores RJ",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Lista de Vendedores RJ": {
+      "main": [
+        [
+          {
+            "node": "Pega a Lista de Clientes RJ",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Lista de Bancos RS": {
+      "main": [
+        [
+          {
+            "node": "Lista de Vendedores RS",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Lista de Vendedores RS": {
+      "main": [
+        [
+          {
+            "node": "Pega a Lista de Clientes RS",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Lista de Bancos SC": {
+      "main": [
+        [
+          {
+            "node": "Lista de Vendedores SC",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "Switch2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get a row": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "d3834249-5aad-451b-a3e4-f26b5bf0a271",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "e4e897c8a435e9272f2a0de0d79d4b6a45a2605403c7c3b29d983dc095e7a6fe"
+  },
+  "id": "P7NVHAB9eTo7xrw4",
+  "tags": []
+}
