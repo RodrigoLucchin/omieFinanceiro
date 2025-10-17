@@ -1,3 +1,5 @@
+EN/US on the end of the readme.
+
 # PT/BR
 
 # Projeto de Integração Financeira Multi-Empresa com n8n e Omie
